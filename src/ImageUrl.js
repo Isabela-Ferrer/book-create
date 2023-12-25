@@ -23,7 +23,7 @@ async function createURLS(input) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer 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",
+                    "Authorization": "Bearer " + ENTERAPIKEY,
                 },
                 body: JSON.stringify(APIBody),
             });
@@ -46,7 +46,7 @@ async function createURLS(input) {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer` + ENTERAPIKEY,
           },
           body: JSON.stringify({
             model: "dall-e-2",
