@@ -2,7 +2,7 @@
 async function createURLS(input) {
     const pages = input
     console.log(pages)
-  
+    let apikey = "ENTERAPIKEY"
     //Estoy creando un dibujo para la página de un libro infantil que contiene este texto: ${text}. 
     //Qué debería tener esta ilustración? Describe la ilustración en una frase.
 
@@ -23,7 +23,7 @@ async function createURLS(input) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": "Bearer " + ENTERAPIKEY,
+                    "Authorization": "Bearer " + apikey,
                 },
                 body: JSON.stringify(APIBody),
             });
@@ -46,7 +46,7 @@ async function createURLS(input) {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer` + ENTERAPIKEY,
+            Authorization: `Bearer` + apikey,
           },
           body: JSON.stringify({
             model: "dall-e-2",
