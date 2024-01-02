@@ -1,7 +1,5 @@
 // PDFGenerator.js
 import jsPDF from 'jspdf'; // Replace with the path to your first image
-import { narrationToStory } from './StoryPages';
-import { createURLS } from './ImageUrl';
 import girlCover from './images/girlcover.png'
 import boyCover from './images/boycover.png'
 import {font} from "./Font"
