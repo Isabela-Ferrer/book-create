@@ -85,7 +85,7 @@ function GptStory () {
           <textarea
             className="form-control"
             id="apiKey"
-            value={formData.story}
+            value={formData.apiKey}
             name="apiKey"
             onChange={handleChange}
           />
