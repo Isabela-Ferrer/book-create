@@ -62,6 +62,7 @@ function GptStory () {
           <label className="form-label">Su genero:</label>
           <input
             type="text"
+            placeholder='niña o niño'
             className="form-control"
             id="gender"
             value={formData.gender}
@@ -82,9 +83,10 @@ function GptStory () {
         </div>
         <div className="mb-3">
           <label className="form-label">Clave API:</label>
-          <textarea
+          <input
             className="form-control"
             id="apiKey"
+            type="password"
             value={formData.apiKey}
             name="apiKey"
             onChange={handleChange}

@@ -57,7 +57,7 @@ const PDFGenerator = (childName, gender, storyList, callback) => {
        newPage(storyList[i]);
     }
 
-        pdf.save('generated_pdf_with_multiple_pages.pdf');
+        pdf.save('La Historia de '+ childName +'.pdf');
 
         if (typeof callback === "function") {
             callback();
