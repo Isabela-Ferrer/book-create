@@ -77,6 +77,7 @@ function GptStory () {
             id="story"
             value={formData.story}
             name="story"
+            placeholder='Una meta, ambición, o futuro ideal.'
             onChange={handleChange}
             rows={4}
           />
@@ -85,6 +86,7 @@ function GptStory () {
           <label className="form-label">Clave API:</label>
           <input
             className="form-control"
+            placeholder='Clave de la API de OpenAI.'
             id="apiKey"
             type="password"
             value={formData.apiKey}
